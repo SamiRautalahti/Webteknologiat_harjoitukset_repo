@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+</html> <!-- html dokumentin juurielementti-->
+
+<head> <!-- dokumentin otsikkotiedot-->
+    <title>Hello World!</title> <!--tässä on sivun otsikko, eikä se näy siis varsinaisella sivulla käyttäjälle-->
+</head>
+
+<body> <!--dokumentin runko eli käyttäjälle näkyvä osa alkaa tästä-->
+    <h1><b>Hello World!</b></h1> <!-- tässsä on otsikko, h1 on ylimmän tason otsikko ja b-tunnisteella saadaan lihavoitu teksti-->
+    <p></p>
+    <p><i>Tämä on kurssin ensimmäinen html-sivu! Eli tästä alkaa uudet jutut.</i></p> <!-- tekstikappale ja i-tunnuksella saadaan kursivoitua tekstiä-->
+    <p><i>Tässä päästään harjoittelemaan html-koodin käyttöä<br> ja samalla siirretään tiedostoja omaan repositorion.</i></p>
+    <p>Tottakai kun on mahdollista niin laitetaan myös<br> muutama kuva sekä linkit ja muut kuntoon tähän dokumenttiin.</p>
+    <p><strong>Let's go, eli let's mentiin ja nyt kokeillaan html 5 koodin kirjoitusta.</strong></p> <!-- strong-tunnuksella saadaan vahvistettua tekstiä-->
+    <img src="HTML5_logo.png" width="200" height="200"> <!-- img eli kuvan lisätään tällä rivillä-->
+    <p></p>
+    <img src="images/HTML5_logo.png" width="200" height="200">
+    <p></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/375px-HTML5_logo_and_wordmark.svg.png" width="200" height="200">
+
+    <h1>Linkkejä</h1> <!-- tässsä on otsikko, h1 on ylimmän tason otsikko-->
+    <u1>
+        <li><a href="https://www.lab.fi" style="color: red">LAB</a></li> <!-- tässä on linkki-->
+        <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li><!-- tässä on toinen linkki-->
+    </u1>
+        <button onclick="location.href='https://moodle.lut.fi/my/'" type="button">Mene tästä Moodleen!</button>
+    <p></p>
+    <span><b>Tekstiä!</b></span>
+    <span><b>Tekstiä!</b></span>
+    <span><del>Tekstiä!</del></span> <!--del-tunnuksella saadaan yliviivattua tekstiä-->
+    <span><ins>Tekstiä!</ins></span> <!--del-tunnuksella saadaan alleviivattua tekstiä-->
+    <p></p>
+    <p></p>
+    <table> <!-- tässä on taulukko eli se merkitään table-tunnisteella-->
+        <tr> <!--rivit ilmaistaan tr-tunnisteella -->
+        <th>Etunimi</th> <!-- th-tunnisteella tehdään otsikko-->
+        <th>Sukunimi</th>
+        <th>Ikä</th>
+        </tr>
+        <tr>
+        <td>Janet</td> <!-- data saadaan laitettua td-tunnisteella-->
+        <td>Colton</td>
+        <td>40</td>
+        </tr>
+        <tr>
+        <td>John</td>
+        <td>Jackson</td>
+        <td>56</td>
+        </tr>
+        <td>Earl</td>
+        <td>Johnson</td>
+        <td>27</td>
+        </tr>
+        </table>
+        <p></p>
+    <ul> <!-- numeroimaton lista saadaan ul-tunnisteella-->
+            <li>Kahvi</li> <!-- listan rivit saadaan li-tunnisteella-->
+            <li>Tee</li>
+            <li>Maito</li>
+            </ul>
+            <ol> <!-- numeroitu lista saadaan taasen ol-tunnisteella-->
+            <li>Kahvi</li>
+            <li>Tee</li>
+            <li>Maito</li>
+            </ol>
+    <p></p>
+    forms> <!-- tässä on lomake-->
+    <fieldset style="width:500px;">
+        <legend>Yhteystiedot</legend>
+        <table>
+            <tr>
+                <td><label>Etunimi</label></td>
+                <td><input type=""text" id="fname" name="fname"></td>
+                <td colspan="2">Valitse toiminto:</td>
+            </tr>
+            <tr>
+                <td><label>Sukunimi</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+                <td><input type="checkbox"></td>
+                <td><label>Otsikko</label></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>
