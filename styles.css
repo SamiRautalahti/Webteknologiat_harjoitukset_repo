@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-left: 25px;
     background-color: aqua;
@@ -10,5 +10,10 @@ body{
 }
 fieldset {
     background-color: powderblue;
-    border: none;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 10px;
+    margin: 10px;
+    padding: 5px;
+    flex-grow: 1;
   }
