@@ -24,12 +24,13 @@ body{
 .card{
     border-style: solid;
     border-radius: 20px;
-    border-width: 5px;
+    border-width: 10px;
     margin: 10px;
     padding: 5px;
     background-color: rgb(91, 214, 216);
     flex-grow: 1;
     display: flex;
+    text-align: center;
     flex-direction: column;
 }
 .card img{
