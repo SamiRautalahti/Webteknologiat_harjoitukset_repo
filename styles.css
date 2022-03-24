@@ -4,4 +4,11 @@ body{
     margin: auto;
     margin-left: 25px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+fieldset {
+    background-color: powderblue;
+    border: none;
+  }
