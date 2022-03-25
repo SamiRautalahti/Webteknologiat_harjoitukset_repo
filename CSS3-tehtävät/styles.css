@@ -7,10 +7,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("https://m.media-amazon.com/images/I/811PJIZ3LGL._SL1200_.jpg");
+    background-color: #cccccc;
 }
 fieldset {
     background-color: powderblue;
-    border-style: dashed;
+    border-style: solid;
     border-radius: 30px;
     border-width: 10px;
     margin: 10px;
@@ -18,7 +20,10 @@ fieldset {
     flex-grow: 1;
 }
 form{
-    background-color: dodgerblue ;
+    background-color: dodgerblue;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 10px;
 }
 table{
     border-collapse: collapse;
