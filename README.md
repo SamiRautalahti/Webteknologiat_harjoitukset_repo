@@ -19,6 +19,7 @@ CSS3-tehtävät-kansiossa on seuraavat tehtävät:
 
 •	Index2.html on myös muokattuna omalla tyylillä eli styles.css
 
+Javascript-kansiosta löytyy nimenomaan Javascript-tehtävät.
 
 
 
