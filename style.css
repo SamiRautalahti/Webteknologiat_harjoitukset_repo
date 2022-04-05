@@ -2,7 +2,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: auto;
-    background-color: aqua;
+    background-color: floralwhite;
 }
 .maincontent{
     display: flex;
@@ -10,7 +10,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     background-color: chocolate;
-    align-items: flex-end;
+    align-items: stretch;
 }
 .intro{
     background-color:coral;
@@ -19,15 +19,15 @@ body{
     border-width: 10px;
     margin: 10px;
     padding: 5px;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 .card{
     border-style: solid;
     border-radius: 20px;
-    border-width: 10px;
-    margin: 10px;
+    border-width: 20px;
+    margin: 20px;
     padding: 5px;
-    background-color: burlywood;
+    background-color: lavender;
     flex-grow: 1;
     display: flex;
     text-align: center;
