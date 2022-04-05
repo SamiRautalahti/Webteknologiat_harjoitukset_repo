@@ -2,7 +2,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     width: 80%;
     margin: auto;
-    background-color: aquamarine;
+    background-color: blueviolet;
 }
 .maincontent{
     display: flex;
@@ -27,7 +27,7 @@ body{
     border-width: 10px;
     margin: 10px;
     padding: 5px;
-    background-color: rgb(91, 214, 216);
+    background-color: burlywood;
     flex-grow: 1;
     display: flex;
     text-align: center;
