@@ -39,12 +39,23 @@
     
     <div class="container-fluid" style="margin-top:80px">
       <h3>Top Fixed Navbar on siis käytössä tällä sivulla </h3>
-      <p>Eli toisinsanoen navigointpalkki pysyy koko selaamisen ja skrollaamisen ajan tuossa ylhäällä</p>
+      <p>Eli toisinsanoen navigointipalkki pysyy koko selaamisen ja skrollaamisen ajan tuossa ylhäällä</p>
       <h1>Skrollaile alaspäin niin huomaat</h1>
     </div>
     <br>
     <br>
     <br>
+
+        <!-- intro-luokka sekä intro2-luokka ovat erikseen jotta saan erilaisen muotoilun niille-->
+        <div class="intro">
+          <h1>Luennon ja harjoituksen aiheena siis seuraava:</h1>
+          <h2>CSS osa 2: Flexbox/Grid ja Bootstrap</h2>
+      </div>
+  
+      <div class="intro2">
+          <h1>Let's go ja nyt kokeillaan html 5 koodin kirjoitusta.</h1>
+          <h2>Vähän säätöä ja uuden opettelua siis luvassa.</h2>
+      </div>
 
     <!-- tässä containerissa on kolumnit eli niihin saisi jotain tekstejä-->
 <div class="container">
@@ -67,17 +78,6 @@
     </div>
   </div>
   
-    <!-- intro-luokka sekä intro2-luokka ovat erikseen jotta saan erilaisen muotoilun niille-->
-    <div class="intro">
-        <h1>Luennon ja harjoituksen aiheena siis seuraava:</h1>
-        <h2>CSS osa 2: Flexbox/Grid ja Bootstrap</h2>
-    </div>
-
-    <div class="intro2">
-        <h1>Let's go ja nyt kokeillaan html 5 koodin kirjoitusta.</h1>
-        <h2>Vähän säätöä ja uuden opettelua siis luvassa.</h2>
-
-    <p>
     </div>
     <!--tässä on vain tarkoituksena käyttää xmp-tagia ja näyttää sivulla sen toimivuus-->
         <xmp>
@@ -89,8 +89,8 @@
 
     <!-- tässä aminissa on kuvagalleria, 3 kuvaa-->
     <div class="main">
-        <h1>Kuvia Suomen luonnosta.</h1>
-        <h1>Kuvat saa suurennettua klikkaamalla niitä.</h1>
+        <h3>Kuvia Suomen luonnosta.</h3>
+        <h3>Kuvat saa suurennettua klikkaamalla niitä.</h3>
         <br>
         <br>
         <!-- Käyttämällä .thumbnail luokan avulla voidaan näyttää kuvagalleria.-->
@@ -129,25 +129,26 @@
         </div>
       </div>
   
-      <div class="main">
-        <h2>Harakka</h2>
+      <div class="main1">
+        <h3>Harakka</h3>
         <!-- Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)-->
-        <img class="img-responsive" src="images/a04.jpg" alt="harakka" width="460" height="345">
-        <br>
+        <img class="img-responsive" src="images/a04.jpg" alt="harakka" style="float: left; margin-right: 15px;">
         <a href="https://luontoportti.com/t/505/harakka">Jos haluat lukea lisätietoja harakasta, klikkaa tästä!  </a> <!-- linkki html-sivulle -->
       </div>
       <br>
       <br>
-
+      <!--img src="image.jpg" alt="Sunflower" style="float: left; margin-right: 15px;">
       <!--button rivin linkit eivät ole toiminnassa elemtentteinä valmiiksi-->
-      <button type="button" class="btn btn-outline-primary">Primary</button>
-      <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-outline-success">Success</button>
-      <button type="button" class="btn btn-outline-danger">Danger</button>
-      <button type="button" class="btn btn-outline-warning">Warning</button>
-      <button type="button" class="btn btn-outline-info">Info</button>
-      <button type="button" class="btn btn-outline-light">Light</button>
-      <button type="button" class="btn btn-outline-dark">Dark</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-link">Link</button>
       
 
 
