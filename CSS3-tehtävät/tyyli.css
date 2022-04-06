@@ -30,7 +30,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     background-color: beige;
-    border-style: dotted;
+    border-style: groove;
     border-radius: 5px;
     border-width: 5px;
     margin: 10px;
