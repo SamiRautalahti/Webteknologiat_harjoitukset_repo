@@ -2,14 +2,37 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: auto;
-    background-color: lightcyan;
+    background-color: darkgrey;
 }
-.maincontent{
+.main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: chocolate;
+    background-color: beige;
+    align-items: stretch;
+    border-style: groove;
+    border-radius: 2px;
+    border-width: 2px;
+}
+.hartsa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: honeydew;
+    align-items: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: cornsilk;
     align-items: stretch;
 }
 .intro{

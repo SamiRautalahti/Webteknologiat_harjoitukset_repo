@@ -2,18 +2,35 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: auto;
-    background-color: aqua;
+    background-color: honeydew;
 }
 .maincontent{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: chocolate;
+    background-color: honeydew;
     align-items: flex-end;
 }
+.hartsa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: honeydew;
+    align-items: center;
+}
 .intro{
-    background-color:coral;
+    background-color: azure;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    margin: 10px;
+    padding: 5px;
+    flex-grow: 1;
+}
+.intro2{
+    background-color: ghostwhite;
     border-style: solid;
     border-radius: 20px;
     border-width: 10px;
@@ -27,7 +44,7 @@ body{
     border-width: 10px;
     margin: 10px;
     padding: 5px;
-    background-color: burlywood;
+    background-color: azure;
     flex-grow: 1;
     display: flex;
     text-align: center;

@@ -16,7 +16,7 @@
 <body>
 
   <!-- ylävalikon eli navbarin jätin paikalleen, eli poistin tuosta luokasta "fixed top"  että scrollatessa se ole kiinni näytön yläreunassa-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed top navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navigaatio-valikko</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -50,138 +50,119 @@
         </div>
     </nav>
       
-
-<div class="container">
-  <h2>Kuvia Suomen luonnosta</h2>
-  <!-- Käyttämällä .thumbnail luokan avulla voidaan näyttää kuvagalleria.-->
-  <!-- Luokan .caption avulla saadaan täytettä sekä tummman harmaa teksti kuvien alle.-->
-  <p>Kuvat saa suurennettua klikkaamalla niitä.</p>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/images/a01.jpg" target="_blank">
-          <img src="/images/a01.jpg" alt="Lights" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+    <div class="main">
+      <h5>Kuvia Suomen luonnosta.</h5>
+      <br>
+      <br>
+      <!-- Käyttämällä .thumbnail luokan avulla voidaan näyttää kuvagalleria.-->
+      <!-- Luokan .caption avulla saadaan täytettä sekä tummman harmaa teksti kuvien alle.-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/images/a01.jpg" target="_blank">
+              <img src="/images/a01.jpg" alt="Maisema1" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/images/a02.jpg" target="_blank">
+              <img src="/images/a02.jpg" alt="Maisema2" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/images/a03.jpg" target="_blank">
+              <img src="/images/a03.jpg" alt="Maisema3" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      <h5>Kuvat saa suurennettua klikkaamalla niitä.</h5>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/images/a02.jpg" target="_blank">
-          <img src="/images/a02.jpg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </a>
-      </div>
+
+    <div class="hartsa">
+      <h2>Harakka</h2>
+      <img class="img-responsive" src="/images/a04.jpg" alt="harakka" width="460" height="345">
+      <br/><br/>
+      <a href="https://luontoportti.com/t/505/harakka" style="color:black">Lisätietoja harakasta, klikkaa tästä!</a>
+      Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen):</p>
     </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/images/a03.jpg" target="_blank">
-          <img src="/images/a03.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+    
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    
+    <div class="container">
+      <div class="row">
+          <div class="card col-6 col-md-3">
+              <img src="HTML5_logo.png" width="200" height="200">
+    
+              <div class="card-body">
+                  <div class="card-title">Linkkejä:</div>
+                  <ul>
+                      <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
+                      <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                  </ul>
+              </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Harakka</h2>
-  <p>Tuttu Suomen luonnosta, utelias, aina tarkkaileva sekä viisas hutunkeittäjä.</p>
-  <li><a href="https://luontoportti.com/t/505/harakka" style="color:black">Lisätietoja harakasta!, klikkaa tästä!</a></li>
-  <p>Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen):</p>
-  <img class="img-responsive" src="/images/a04.jpg" alt="Chania" width="460" height="345"> 
-</div>
-
-<div class="container">
-  <h2>Button Styles</h2>
-  <button type="button" class="btn">Basic</button>
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-link">Link</button>      
-</div>
-
-<div class="container">
-  <div class="row">
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
+          <div class="card col-6 col-md-3">
+              <img src="HTML5_logo.png" width="200" height="200">
+    
+              <div class="card-body">
+                  <div class="card-title">Linkkejä:</div>
+                  <ul>
+                      <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
+                      <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                  </ul>
+              </div>
           </div>
-      </div>
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
+          <div class="card col-6 col-md-3">
+              <img src="HTML5_logo.png" width="200" height="200">
+    
+              <div class="card-body">
+                  <div class="card-title">Linkkejä:</div>
+                  <ul>
+                      <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
+                      <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                  </ul>
+              </div>
           </div>
-      </div>
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
+          <div class="card col-6 col-md-3">
+              <img src="HTML5_logo.png" width="200" height="200">
+    
+              <div class="card-body">
+                  <div class="card-title">Linkkejä:</div>
+                  <ul>
+                      <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
+                      <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                  </ul>
+              </div>
           </div>
-      </div>
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="card col-6 col-md-3">
-          <img src="HTML5_logo.png" width="200" height="200">
-
-          <div class="card-body">
-              <div class="card-title">Linkkejä:</div>
-              <ul>
-                  <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                  <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
-              </ul>
-          </div>
-      </div>
-  </div>
-</div>
+          <div class="card col-6 col-md-3">
+              <img src="HTML5_logo.png" width="200" height="200">
+    
+              <div class="card-body">
+                  <div class="card-title">Linkkejä:</div>
+                  <ul>
+                      <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
+                      <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                  </ul>
 
 
-</body>
-</html>
-
+    
