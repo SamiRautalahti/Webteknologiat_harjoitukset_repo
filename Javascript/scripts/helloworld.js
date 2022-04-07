@@ -9,6 +9,7 @@ function sayHelloTo(name) {
     console.log('buttonia on painettu, nimi on: ' + name);
     //alert("Hei " + name + "!");
     document.getElementById('hello-div').innerHTML = 'Hei ' + name;
+    console.log('HelloWorld!');
 }
 
 function hideText() {
