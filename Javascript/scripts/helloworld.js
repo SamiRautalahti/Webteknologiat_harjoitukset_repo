@@ -4,5 +4,5 @@ window.onload = function () {
 
 function sayHelloTo(name) {
     alert("Hei " + name + "!");
-    console.log("HelloWorld!");
+    console.log("sayHello-funktio suoritettu");
 }
