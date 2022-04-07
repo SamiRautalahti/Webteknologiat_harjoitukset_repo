@@ -1,15 +1,16 @@
-var helloElement = document.getElementById('hello-div');
+var helloElement;
 
-windows.onload = function () {
+window.onload = function () {
     console.log("Tämä kirjoitetaan selaimen konsoliin");
+    helloElement = document.getElementById('hello-div');
 }
 
 function sayHelloTo(name) {
     console.log('buttonia on painettu, nimi on: ' + name);
     //alert("Hei " + name + "!");
-    helloElement.innerHTML = 'hei' + name;
+    document.getElementById('hello-div').innerHTML = 'Hei ' + name;
 }
 
 function hideText() {
-    helloElement.innerHTML = '';
+    document.getElementById('hello-div').innerHTML = '';
 }
