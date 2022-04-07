@@ -86,11 +86,11 @@
 
   </div>
   <!--tässä on vain tarkoituksena käyttää xmp-tagia ja näyttää sivulla sen toimivuus-->
-  <xmp>
-    Tässä näkyy nyt sitten tekstiä
-    html tai mitä vaan,
-    eli tässä näkyy mikä tahansa teksti kun käytetään xmp-tagia. Kätevää, eikö vaan?
-  </xmp>
+  <strong><xmp>
+    Tähän saan näkyviin minkä vaan haluamani tekstin tai merkin, kun käytän xmp-tagia.
+                              ja sen sijoittaakin miten haluaa. 
+                                                                      Kätevää, eikö vaan?
+  </xmp></strong>
   </p>
 
   <!-- tässä luokassa on kuvagalleria, 3 kuvaa-->
@@ -111,7 +111,7 @@
             <a href="images/a01.jpg" target="_blank">
               <img src="images/a01.jpg" alt="Maisema1" style="width:100%">
               <div class="caption">
-                <p>Kuvaan liittyvän tekstin voisi sijoittaa tähän.</p>
+                <p>Saimaan kaunis maisema hakee vertaistaan.</p>
               </div>
             </a>
           </div>
@@ -121,7 +121,7 @@
             <a href="images/a02.jpg" target="_blank">
               <img src="images/a02.jpg" alt="Maisema2" style="width:100%">
               <div class="caption">
-                <p>Kuvaan liittyvän tekstin voisi sijoittaa tähän.</p>
+                <p>Talvinen lumimaisemakin aina häikäisee.</p>
               </div>
             </a>
           </div>
@@ -131,14 +131,13 @@
             <a href="images/a03.jpg" target="_blank">
               <img src="images/a03.jpg" alt="Maisema3" style="width:100%">
               <div class="caption">
-                <p>Kuvaan liittyvän tekstin voisi sijoittaa tähän.</p>
+                <p>Kesällä järvellä, tutussa mökkirannassa on mitä parhainta.</p>
               </div>
             </a>
           </div>
         </div>
       </div>
-      <h3>Kuvia Suomen luonnosta.</h3>
-      <h3>Kuvat saa suurennettua klikkaamalla niitä.</h3>
+      <h4>Kuvia Suomen luonnosta. Kuvat saa suurennettua klikkaamalla niitä.</h4>
   </div>
 
   <h3 id="Harakka">
@@ -146,33 +145,36 @@
       <h3>Harakka</h3>
       <!-- Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)-->
       <img class="img-responsive" src="images/a04.jpg" alt="harakka" style="width: 100%;">
-      <a href="https://luontoportti.com/t/505/harakka">Jos haluat lukea lisätietoja harakasta, klikkaa tästä! </a>
+      <p>Harakka (Pica pica) on ehdottomasti tutuin lintumme, tuo varovainen, utelias ja valpas hutunkeittäjä.</p>
+      <a href="https://luontoportti.com/t/505/harakka">Jos haluat lukea lisätietoja harakasta, klikkaa tästä!</a>
       <!-- linkki html-sivulle -->
     </div>
     <br>
     <br>
-    <!--button rivin linkit eivät ole toiminnassa elemtentteinä valmiiksi-->
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <p>Alta löydät muutamat napit, voit kokeilla toimiiko ne ja mitä tapahtuu. Ole hyvä!</p>
+    <!--kokoelma muutamasta napista jotka ilmoittavat käyttäjälle mitä nappia he painoivat-->
+    <button type="button" onclick="alert('Primary button was clicked!');" class="btn btn-primary">Primary</button>
+    <button type="button" onclick="alert('Secondary button was clicked!');" class="btn btn-secondary">Secondary</button>
+    <button type="button" onclick="alert('Success button was clicked!');" class="btn btn-success">Success</button>
+    <button type="button" onclick="alert('Danger button was clicked!');" class="btn btn-danger">Danger</button>
+    <button type="button" onclick="alert('Warning button was clicked!');"class="btn btn-warning">Warning</button>
+    <button type="button" onclick="alert('Info button was clicked!');" class="btn btn-info">Info</button>
+    <button type="button" onclick="alert('Light button was clicked!');"class="btn btn-light">Light</button>
+    <button type="button" onclick="alert('Dark button was clicked!');"lass="btn btn-dark">Dark</button>
 
+    <button type="button" 
+        onclick="alert('Report generation has started.');">Generate reports</button>
 
     <h3 id="Linkit">
       <div class="container">
         <div class="row">
           <div class="card col-6 col-md-3">
-            <img src="images/HTML5_logo.png" width="200" height="200">
+            <img src="/images/72735217_746629275762477_8316611317188263936_n.png" width="200" height="200">
 
             <div class="card-body">
               <div class="card-title">Linkkejä:</div>
               <ul>
-                <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-                <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+                <li><a href="https://www.lab.fi" style="color: red">LAB-ammattikorkeakoulu</a></li>
               </ul>
             </div>
           </div>
@@ -182,33 +184,33 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <h3>Card 1</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+            <h3>Eka kortti</h3>
+            <p>jotain tekstiä voisi olla juuri tässä</p>
+            <p>mutta mitä? Se lienee kysymys</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <h3>Card 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+            <h3>Toinen kortti</h3>
+            <p>tässäkin voisi lukea jotain</p>
+            <p>ja seuraavalla rivilläkin</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <h3>Card 3</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+            <h3>Kortti kolmonen</h3>
+            <p>Kolmas raitti</p>
+            <p>Jaakko Kolmonen</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <h3>Card 4</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+            <h3>Kortti nro. 4</h3>
+            <p>Jotain tekstiä</p>
+            <p>Aatteleppa ite.</p>
           </div>
         </div>
       </div>
