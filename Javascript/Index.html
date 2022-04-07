@@ -40,7 +40,13 @@
     <p>Tämä harjoitus tulostaa konsoliin tekstin "Hello world!" kun tämä sivu aukeaa selaimessa.<br>
         Harjoituksen toisessa osassa jotain jännää pitäisi tapahtua kun tätä nappia painaa:<br><br>
 
-  <button type="button" class="btn btn-info" onclick="sayHelloTo('muukalainen')">Paina tästä</button>
+        
+        
+    <p id='hello-div>' </p>
+
+    <button type="button" class="btn btn-info" onmouseover="sayHelloTo('muukalainen')"
+    onmouseout="hideText()">Info</button>
+  </div>
 
   <script defer src="scripts/helloworld.js"></script>
 

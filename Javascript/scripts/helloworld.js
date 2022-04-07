@@ -1,8 +1,15 @@
-window.onload = function () {
+var helloElement = document.getElementById('hello-div');
+
+windows.onload = function () {
     console.log("Tämä kirjoitetaan selaimen konsoliin");
 }
 
 function sayHelloTo(name) {
-    alert("Hei " + name + "!");
-    console.log("sayHello-funktio suoritettu");
+    console.log('buttonia on painettu, nimi on: ' + name);
+    //alert("Hei " + name + "!");
+    helloElement.innerHTML = 'hei' + name;
+}
+
+function hideText() {
+    helloElement.innerHTML = '';
 }
