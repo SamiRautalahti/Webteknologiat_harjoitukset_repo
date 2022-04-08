@@ -3,6 +3,7 @@ body{
     width: 80%;
     margin: 10%;
     background-color: lightcyan;
+    background-image: url("/images/ocean.jpg");
 }
 .maincontent{
     display: flex;
@@ -37,11 +38,4 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-html{ 
-    background: url(/images/ocean.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
