@@ -19,8 +19,13 @@ CSS3-tehtävät-kansiossa on seuraavat tehtävät:
 
 •	Index2.html on myös muokattuna omalla tyylillä eli styles.css
 
+•	Testi.html on CSS osa 2: Flexbox/Grid ja Bootstrap-tehtävä.
+
 Javascript-kansiosta löytyy nimenomaan Javascript-tehtävät.
 
+•	map.html on "Näytä osoite kartalla"-tehtävä.
+
+•	calculator.html on "Yksinkertainen laskin"-tehtävä.
 
 
 Mikäli tulee mitään kysyttävää niin ota ihmeessä yhteyttä: sami.rautalahti@student.lab.fi
