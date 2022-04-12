@@ -24,8 +24,8 @@
 <br>
 <body>
 
-  <!--navbar löytyy seuraavilta riveiltä, eli fixed top mallissa se tarraa aina näytön yläreunaan skrollatessa alaspäin-->
-  <!-- ylävalikon eli navbarin jätin paikalleen, eli poistin tuosta luokasta "fixed-top"  että scrollatessa se ole kiinni näytön yläreunassa-->
+  <!--navbar löytyy seuraavilta riveiltä, eli fixed top mallissa se on tarrautunut näytön/selaimen yläreunaan-->
+  <!-- eli tuolla valinnalla fixed-top se pysyy kokoajan näkyvissä-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <a class="navbar-brand" href="#">Koti</a>
     <ul class="navbar-nav">
@@ -38,14 +38,14 @@
       <a class="nav-link" href="#Linkit">Linkit</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#Yhteystiedot">Yhteystiedot</a>
+        <a class="nav-link" href="#Kortit">Kortit</a>
       </li>
     </ul>
   </nav>
 
   <div class="container-fluid" style="margin-top:80px">
-    <h3>Fixed Top Navbar on siis käytössä tällä sivulla, asetettuna vielä fixed-top </h3>
-    <p>Eli toisinsanoen navigointipalkki pysyy koko selaamisen ja skrollaamisen ajan tuossa ylhäällä</p>
+    <h3>Fixed Top Navbar on siis käytössä tällä sivulla.</h3>
+    <p>Eli navbar on koko ajan näkyvillä.</p>
     <h1>Skrollaile alaspäin niin huomaat</h1>
   </div>
   <br>
@@ -59,7 +59,7 @@
     <h3>Tässä on asetettu tyylissä seuraavat asiat: margin: 10px; padding: 10px; flex-grow: 1;</h3>
   </div>
 
-  <div class="intro2">
+  <div class="intro">
     <h1>Let's go ja nyt kokeillaan html 5 koodin kirjoitusta.</h1>
     <h2>Vähän säätöä ja uuden opettelua siis luvassa.</h2>
   </div>
@@ -68,17 +68,17 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h3>Kolumni johon ensimmäinen teksti</h3>
+        <h3>Kolumni johon ensimmäinen tekstikappale</h3>
         <p>Tässä kolumnissa on asetettuna seuraavat asiat tyyli-tiedostossa:</p>
         <p>display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;</p>
       </div>
       <div class="col-sm-4">
-        <h3>Kolumni johon toinen teksti</h3>
+        <h3>Kolumni johon toinen tekstikappale</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>
       <div class="col-sm-4">
-        <h3>Kolumni johin kolmas teksti</h3>
+        <h3>Kolumni johon kolmas tekstikappale</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>
@@ -100,8 +100,6 @@
     <br>
     <!--id:n avulla yläpalkin linkki tuo tähän kun sitä klikataan-->
     <h3 id="Kuvat">
-      <h3>Muutama kuva Suomen luonnosta.</h3>
-      <h3>Thumbnail-luokan avulla voidaan näyttää kuvagalleria.</h3>
       <br>
       <br>
       <!-- Thumbnail-luokan avulla voidaan näyttää kuvagalleria.-->
@@ -112,7 +110,7 @@
             <a href="images/a01.jpg" target="_blank">
               <img src="images/a01.jpg" alt="Maisema1" style="width:100%">
               <div class="caption">
-                <p>Saimaan kaunis maisema hakee vertaistaan.</p>
+              <h5>Saimaan kaunis maisema hakee vertaistaan.</h5>
               </div>
             </a>
           </div>
@@ -122,7 +120,7 @@
             <a href="images/a02.jpg" target="_blank">
               <img src="images/a02.jpg" alt="Maisema2" style="width:100%">
               <div class="caption">
-                <p>Talvinen lumimaisemakin aina häikäisee.</p>
+                <h5>Talvinen lumimaisemakin aina häikäisee.</h5>
               </div>
             </a>
           </div>
@@ -132,41 +130,44 @@
             <a href="images/a03.jpg" target="_blank">
               <img src="images/a03.jpg" alt="Maisema3" style="width:100%">
               <div class="caption">
-                <p>Kesällä järvellä, tutussa mökkirannassa on mitä parhainta.</p>
+                <h5>Kesäinen mökkiranta rauhoittaa mieltä.</h5>
               </div>
             </a>
           </div>
         </div>
       </div>
       <h4>Kuvia Suomen luonnosta. Kuvat saa suurennettua klikkaamalla niitä.</h4>
+      <h4>Tässä osiossa seuraavat määritykset: display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;</h4>
   </div>
 
   <h3 id="Harakka">
-    <div class="main1">
-      <h3>Harakka</h3>
-      <h5>Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)</h5>
-      <!-- Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)-->
+    <div class="container">
       <img class="img-responsive" src="images/a04.jpg" alt="harakka" style="width: 100%;">
-      <p>Harakka (Pica pica) on ehdottomasti tutuin lintumme, tuo varovainen, utelias ja valpas hutunkeittäjä.</p>
+      <h5>Harakka (Pica pica) on ehdottomasti tutuin lintumme, tuo varovainen, utelias ja valpas hutunkeittäjä.</h5>
       <a href="https://luontoportti.com/t/505/harakka">Jos haluat lukea lisätietoja harakasta, klikkaa tästä!</a>
       <!-- linkki html-sivulle -->
+      <h5>Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)</h5>
+      <!-- Kun käytetään .img-resposive luokkaa kuva saadaan skaalautumaan mukavasti pääelementtiin (muuta selainikkunan kokoa nähdäksesi tehosteen)-->
     </div>
     <br>
     <br>
-    <p>Alta löydät muutamat napit, voit kokeilla toimiiko ne ja mitä tapahtuu. Ole hyvä!</p>
-    <p>Kaikista aktivoituu jonkinlainen ilmoitus.</p>
-    <!--kokoelma muutamasta napista jotka ilmoittavat käyttäjälle mitä nappia he painoivat-->
-    <button type="button" onclick="alert('Primary button was clicked!');" class="btn btn-primary">Primary</button>
-    <button type="button" onclick="alert('Secondary button was clicked!');" class="btn btn-secondary">Secondary</button>
-    <button type="button" onclick="alert('Success button was clicked!');" class="btn btn-success">Success</button>
-    <button type="button" onclick="alert('Danger button was clicked!');" class="btn btn-danger">Danger</button>
-    <button type="button" onclick="alert('Warning button was clicked!');"class="btn btn-warning">Warning</button>
-    <button type="button" onclick="alert('Info button was clicked!');" class="btn btn-info">Info</button>
-    <button type="button" onclick="alert('Light button was clicked!');"class="btn btn-light">Light</button>
-    <button type="button" onclick="alert('Dark button was clicked!');"lass="btn btn-dark">Dark</button>
 
-    <button type="button" 
-        onclick="alert('Raportin tallennus on aloitettu, voit lähteä viikonlopun viettoon! Mars!');">Tallenna raportit tietokantaan</button>
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <h4>Alta löydät muutamat napit, voit kokeilla toimiiko ne ja mitä tapahtuu. Ole hyvä!</h4>
+                <!--kokoelma muutamasta napista jotka ilmoittavat käyttäjälle mitä nappia he painoivat-->
+        <button type="button" onclick="alert('Primary button was clicked!');" class="btn btn-primary">Primary</button>
+        <button type="button" onclick="alert('Secondary button was clicked!');" class="btn btn-secondary">Secondary</button>
+        <button type="button" onclick="alert('Success button was clicked!');" class="btn btn-success">Success</button>
+        <button type="button" onclick="alert('Danger button was clicked!');" class="btn btn-danger">Danger</button>
+        <button type="button" onclick="alert('Warning button was clicked!');"class="btn btn-warning">Warning</button>
+        <button type="button" onclick="alert('Info button was clicked!');" class="btn btn-info">Info</button>
+        <button type="button" onclick="alert('Light button was clicked!');"class="btn btn-light">Light</button>
+        <button type="button" onclick="alert('Dark button was clicked!');"lass="btn btn-dark">Dark</button>
+        <button type="button" onclick="alert('Raportin tallennus on aloitettu, voit lähteä viikonlopun viettoon! Mars!');">Tallenna raportit tietokantaan</button> 
+      </div>
+    </div>
+
     <br>
     <br>
     <br>
@@ -176,83 +177,85 @@
           <img src="images/LAB_logo.png" width="200" height="200">
           <h1>Linkkejä:</h1>
           <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
-          <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
+          <h1>Korttien asetukset:flex-grow: 1; display: flex; text-align: center; flex-direction: column;</h1>
         </div>
         <div class="card">
           <img src="images/LAB_logo.png" width="200" height="200">
           <h1>Linkkejä:</h1>
-          <li><a href="https://www.lab.fi" style="color: red">LAB</a></li>
           <li><a href="https://www.lut.fi" style="color: blue">LUT</a></li>
       </div>
-
       <div class="row">
         <div class="column">
-          <div class="card">
-            <h3>Eka kortti</h3>
-            <p>Korttien osalta asetettu margin: 0 -5px;</p>
+          <div class="card2">
+            <h3><strong>Eka kortti</strong></h3>
+            <h4>Tyyliasetukset:</h4>
+            <p>border-radius: 40px;</p>
+            <p>border-width: 20px;</p>
+            <p>margin: 20px;</p>
+            <p>padding: 15px;</p>
             <p></p>
           </div>
         </div>
 
         <div class="column">
-          <div class="card">
-            <h3>Toinen kortti</h3>
-            <p>tässäkin voisi lukea jotain</p>
-            <p>ja seuraavalla rivilläkin</p>
+          <div class="card2">
+            <h3><strong>Toinen kortti</strong></h3>
+            <h4>Tyyliasetukset jatkuu:</h4>
+            <p>flex-grow: 10;</p>
+            <p>display: flex;</p>
+            <p>text-align: center;</p>
+            <p>flex-direction: column;</p>
           </div>
         </div>
 
         <div class="column">
-          <div class="card">
-            <h3>Kortti kolmonen</h3>
+          <div class="card2">
+            <h3><strong>Kolmas kortti</strong></h3>
             <p>Kolmas raitti</p>
             <p>Jaakko Kolmonen</p>
           </div>
         </div>
 
         <div class="column">
-          <div class="card">
-            <h3>Kortti nro. 4</h3>
+          <div class="card2">
+            <h3><strong>Neljäs kortti</strong></h3>
             <p>Jotain tekstiä</p>
             <p>Aatteleppa ite.</p>
           </div>
         </div>
       </div>
+    </div>
 
-
-      <h3 id="Yhteystiedot"></h3>
+      <h3 id="Kortit"></h3>
       <div class="container">
-        <h2>Card Group</h2>
-        <p>The .card-group class is similar to .card-deck, which creates an <strong>equal height and width</strong> grid
-          of cards.</p>
-        <p>However, the .card-group class removes left and right margins between each card.</p>
-        <p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards
-          follow.</p>
-        <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px),
-          <strong>WITH</strong> top and bottom margin:
-        </p>
+        <h2>Pallopelien varoituskortit</h2>
+        <h2>Tässä pieni tiivistelmä eri varoituskorteista joita tuomari jakaa.</h2>
+
         <div class="card-group">
           <div class="card bg-primary">
             <div class="card-body text-center">
-              <p class="card-text">Some text inside the first card</p>
-              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text"><strong>Sininen varoituskortti:</p></strong>
+              <p class="card-text">Hyvin lievä rike.</p>
               <p class="card-text">Some more text to increase the height</p>
               <p class="card-text">Some more text to increase the height</p>
             </div>
           </div>
           <div class="card bg-warning">
             <div class="card-body text-center">
-              <p class="card-text">Some text inside the second card</p>
+              <p class="card-text"><strong>Keltainen varoituskortti:</p></strong>
+              <p class="card-text">Kertoo, että pelaajaa on virallisesti varoitettu rikkeestään.</p>
             </div>
           </div>
           <div class="card bg-success">
             <div class="card-body text-center">
-              <p class="card-text">Some text inside the third card</p>
+              <p class="card-text"><strong>Vihreä varoituskortti:</p></strong>
+              <p class="card-text">Vihreä kortti tarkoittaa pientä virhettä, joka ei johda suurempiin sanktioihin.</p>
             </div>
           </div>
           <div class="card bg-danger">
             <div class="card-body text-center">
-              <p class="card-text">Some text inside the fourth card</p>
+              <p class="card-text"><strong>Punainen kortti:</p></strong>
+              <p class="card-text">Annetaan vakavasta rikkeestä tai toisesta keltaisesta kortista. Pelaaja suljetaan ottelusta.</p>
             </div>
           </div>
         </div>

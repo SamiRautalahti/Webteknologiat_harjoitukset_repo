@@ -3,8 +3,9 @@ body{
     width: 80%;
     margin: auto;
     background-color: azure;
+    padding-top: 70px; }
 }
-.maincontent{
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,32 +25,11 @@ body{
     margin: 10px;
     padding: 5px;
 }
-.main1{
-    display: contents;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: beige;
-    border-style: groove;
-    border-radius: 25px;
-    border-width: 25px;
-    margin: 10px;
-    padding: 5px;
-}
 .intro{
     background-color: lavender;
     border-style: solid;
     border-radius: 15px;
     border-width: 10px;
-    margin: 10px;
-    padding: 10px;
-    flex-grow: 1;
-}
-.intro2{
-    background-color: ghostwhite;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 5px;
     margin: 10px;
     padding: 10px;
     flex-grow: 1;
@@ -71,13 +51,25 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.card2{
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 20px;
+    margin: 20px;
+    padding: 15px;
+    background-color: blueviolet;
+    flex-grow: 10;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
 * {
     box-sizing: border-box;
-  }
-  .column {
+}
+.column {
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+}
 .row {margin: 0 -5px;
 }
