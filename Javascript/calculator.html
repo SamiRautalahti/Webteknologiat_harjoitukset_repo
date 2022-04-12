@@ -35,42 +35,48 @@
     </li>
   </ul>
 
-  <div class="main">
+  <div class="main" style="padding-top: 20px">
     <h5>Harjoitus 3</h5>
     <h6>Harjoitus 3: Yksinkertainen laskin</h6>
     <p></p>
     <br>
   </div>
 
-  <div class="input-group mb-3">
+  <div class="d-flex justify-content-center" style="padding-top: 20px">
+    <div class="input-group mb-3">
         <button class="btn btn-outline-secondary" type="button" id="button-minus1"
           onclick="setFirstNr('minus')">-</button>
         <input type="text" class="form-control" id="first-nr" placeholder="" aria-label="Example text with button addon" 
-          aria-describedby="button-addon1">
-        <button class="btn btn-outline-secondary" type="button" id=""button-plus1"
+          aria-describedby="button-addon1" style="text-align: center">
+        <button class="btn btn-outline-secondary" type="button" id="button-plus1"
           onclick="setFirstNr('plus')">+</button>
-  </div>
+    </div>
       
-  <select class="form-select mb-3" id="operationSelect" aria-label="Default select example">
-        <option selected>Open this select menu</option>
+    <select class="form-select mb-3" id="operationSelect" aria-label="Default select example">
+        <option selected>Valitse haluamasi laskimen toiminto</option>
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
-  </select>
+    </select>
 
-  <div class="input-group mb-3">
+    <div class="input-group mb-3">
     <button class="btn btn-outline-secondary" type="button" id="button-minus2"
         onclick="setSecondNr('minus')">-</button>
     <input type="text" class="form-control" id="second-nr" placeholder="" aria-label="Example text with button addon" 
-        aria-describedby="button-addon1">
-    <button class="btn btn-outline-secondary" type="button" id=""button-plus2"
+        aria-describedby="button-addon1" style="text-align: center">
+    <button class="btn btn-outline-secondary" type="button" id="button-plus2"
       onclick="setSecondNr('plus')">+</button>
+  </div>
 </div>
 
-<button id="calc-button" type="button" onclick="calculate()" class="btn btn-warning">LASKE</button>
+<div class="d-flex justify-content-center" style="padding-top: 20px">
+  <button id="calc-button" type="button" onclick="calculate()" class="btn btn-warning">LASKE</button>
+</div>
 
-<input type="text" id="vastaus">
+<div class="d-flex justify-content-center" style="padding-top: 20px">
+  <input type="text" id="vastaus" style="text-align: center">
+</div>
 
 <script defer src="scripts/calculator.js"></script>
 

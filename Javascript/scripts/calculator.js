@@ -2,8 +2,8 @@ let defaultValue;
  
 window.onload = function () {
         defaultValue = 5;
-        document.getElementById("first-nr").value = defaultValue;
-        document.getElementById("second-nr").value = defaultValue;
+        document.getElementById("first-nr").value = getRandomInt(5);
+        document.getElementById("second-nr").value = getRandomInt(9);
 }
 /*
 // jQuery esimerkki
@@ -57,3 +57,8 @@ function calculate() {
     let total= eval(currentValueA + selectedValue + currentValueB);
     document.getElementById("vastaus").value = total;
 }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+  
