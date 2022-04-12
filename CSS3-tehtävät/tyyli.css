@@ -2,14 +2,14 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: auto;
-    background-color: azure;
+    background-color: beige;
 }
 .maincontent{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: azure;
+    background-color: aqua;
     align-items: flex-end;
 }
 .main{
@@ -29,7 +29,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: beige;
+    background-color: blanchedalmond;
     border-style: groove;
     border-radius: 25px;
     border-width: 25px;
