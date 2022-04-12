@@ -47,8 +47,13 @@ function setSecondNr(type) {
 
 }
 
-function calculate(type) {
+function calculate() {
     let operators = document.getElementById("operationSelect");
-    let selectedText = operators.options[operators.selectedIndex].text; // +
     let selectedValue = operators.options[operators.selectedIndex].value; // 1
+
+    let currentValueA = document.getElementById("first-nr").value;
+    let currentValueB = document.getElementById("second-nr").value;
+
+    let total= eval(currentValueA + selectedValue + currentValueB);
+    document.getElementById("vastaus").value = total;
 }
