@@ -10,6 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/helloworld.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,39 @@
     <h6>Harjoitus 3: Yksinkertainen laskin</h6>
     <p></p>
     <br>
+  </div>
+
+  <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary" type="button" id="button-minus1"
+          onclick="setFirstNr('minus')">-</button>
+        <input type="text" class="form-control" id="first-nr" placeholder="" aria-label="Example text wtih button addon" 
+          aria-describedby="button-addon1">
+        <button class="btn btn-outline-secondary" type="button" id=""button-plus1"
+          onclick="setFirstNr('plus')">+</button>
+  </div>
+      
+  <select class="form-select mb-3" id="operationSelect" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+  </select>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button" id="button-minus2"
+        onclick="setSecondNr('minus')">-</button>
+    <input type="text" class="form-control" id="second-nr" placeholder="" aria-label="Example text wtih button addon" 
+        aria-describedby="button-addon1">
+    <button class="btn btn-outline-secondary" type="button" id=""button-plus2"
+      onclick="setSecondNr('plus')">+</button>
+</div>
+
+<button id="calc-button" type="button" class="btn btn-warning">LASKE</button>
+
+<input type="text" id="vastaus">
+
+<script defer src=""scripts/calculator.js"></script>
 
   
 </body>
