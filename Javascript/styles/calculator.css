@@ -38,3 +38,17 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+html { 
+    background: url("/images/taustakuva.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.box2000{
+    width: 2050px;
+    height: 1000px;
+    background-color: lightcyan;
+    border: 1px solid black;
+    color: blue;
+}
