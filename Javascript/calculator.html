@@ -14,36 +14,47 @@
 </head>
 
 <body>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="Index.html">Index</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="map.html">Map</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="calculator.html">Calculator</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="carousel.html">Carousel</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="imagegallery.html">Imagegallery</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="jokes.html">Jokes</a>
-    </li>
-  </ul>
 
-  <div class="main" style="padding-top: 20px">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">Index</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="imagegallery.html">Imagegallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jokes.html">Jokes</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Sami Rautalahti 2022
+        </span>
+      </div>
+    </div>
+</nav>
+
+<div class="main" style="padding-top: 20px">
     <h5>Harjoitus 3</h5>
     <h6>Harjoitus 3: Yksinkertainen laskin</h6>
     <p></p>
     <br>
-  </div>
+</div>
 
-  <div class="d-flex justify-content-center" style="padding-top: 20px">
-    <div class="input-group mb-3">
+<div class="d-flex justify-content-center" style="padding-top: 20px">
+    <div class="input-group mb-3" style="width: 300px;">
         <button class="btn btn-outline-secondary" type="button" id="button-minus1"
           onclick="setFirstNr('minus')">-</button>
         <input type="text" class="form-control" id="first-nr" placeholder="" aria-label="Example text with button addon" 
@@ -52,15 +63,15 @@
           onclick="setFirstNr('plus')">+</button>
     </div>
       
-    <select class="form-select mb-3" id="operationSelect" aria-label="Default select example">
-        <option selected>Valitse haluamasi laskimen toiminto</option>
+    <select class="form-select mb-3" id="operationSelect" aria-label="Default select example" style="width: 300px;">
+        <option selected>Valitse laskimen toiminto</option>
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
     </select>
 
-    <div class="input-group mb-3">
+  <div class="input-group mb-3" style="width: 300px;">
     <button class="btn btn-outline-secondary" type="button" id="button-minus2"
         onclick="setSecondNr('minus')">-</button>
     <input type="text" class="form-control" id="second-nr" placeholder="" aria-label="Example text with button addon" 
