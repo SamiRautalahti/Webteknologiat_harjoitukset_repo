@@ -2,7 +2,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 10%;
-    background-image: url('/images/taustakuva.jpg');
+    background-color: beige;
 }
 .maincontent{
     display: flex;
