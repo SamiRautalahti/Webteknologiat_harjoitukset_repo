@@ -2,7 +2,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 10%;
-    background-color: lightcyan;
 }
 .maincontent{
     display: flex;
