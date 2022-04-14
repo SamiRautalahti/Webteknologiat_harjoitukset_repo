@@ -2,7 +2,8 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 10%;
-    background-color: azure;
+    /*background-color: azure;*/
+    background-image: url('/images/taustakuva.jpg')
 }
 .maincontent{
     display: flex;
@@ -38,8 +39,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.box2000{
-    width: 2050px;
+.box1000{
+    width: 1000px;
     height: 1000px;
     background-color: lightcyan;
     border: 1px solid black;
