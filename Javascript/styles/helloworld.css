@@ -44,9 +44,9 @@ body {
     margin-right: auto;
 }
 
-.box1000 {
-    width: 1000px;
-    height: 1000px;
+.box1 {
+    width: 1920px;
+    height: 1080px;
     background-color: lightcyan;
     border: 1px solid black;
     color: blue;
