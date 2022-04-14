@@ -47,8 +47,5 @@ $('#right').click(function () {
 });
 
 $('#start').click(function () {
-    var timer = window.setInterval('$("#right").click()', 5000);
-})
-
-
-
+    var myTimer = window.setInterval('$("#right").click()', 5000);
+});
