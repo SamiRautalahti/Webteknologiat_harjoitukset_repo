@@ -10,11 +10,19 @@ let story_array = [
 ];
 
 let index;
-
 let myTimer;
+const indexKey = 'myDogs';
 
 $(function () {
-    index = 0;
+
+    if (localStorage.hasOwnProperty(indexKey)) {
+        index = localStorage.getItem(indexKey);
+        console.log('index is: ' + index);
+    }
+    else {
+        index = 0;
+    }
+
     myTimer = 0;
     $('#kuva').attr('src', story_array[index].src);
     $('#text-title').text(story_array[index].title);
@@ -22,35 +30,49 @@ $(function () {
 });
 
 $('#left').click(function () {
-    index = index - 1;
-
+    index = parseInt(index) - 1;
+    localStorage.setItem(indexKey, index);
     if (index < 0) {
         index = story_array.length - 1;
     }
-    $('#kuva').attr('src', story_array[index].src);
-    $('#text-title').text(story_array[index].title);
-    $('#text-content').text(story_array[index].content);
-});
+    $('#kuva').hide();
+    $('text-title').hide();
 
-$('#start').click(function () {
     $('#kuva').attr('src', story_array[index].src);
     $('#text-title').text(story_array[index].title);
     $('#text-content').text(story_array[index].content);
+
+    $('#kuva').fadeOut("slow");
+    $('#kuva').fadeIn("slow");
+
+    $('#text-title').fadeOut("slow");
+    $('#text-title').fadeIn("slow");
 });
 
 $('#right').click(function () {
-    index = index + 1;
+    index = parseInt(index) + 1;
     console.log(index + ' ' + story_array.length);
     if (index == story_array.length) {
         index = 0;
     }
+    localStorage.setItem(indexKey, index);
     console.log(index);
+    $('#kuva').hide();
+    $('text-title').hide();
+
     $('#kuva').attr('src', story_array[index].src);
     $('#text-title').text(story_array[index].title);
     $('#text-content').text(story_array[index].content);
+
+    $('#kuva').fadeOut("slow");
+    $('#kuva').fadeIn("slow");
+
+    $('#text-title').fadeOut("slow");
+    $('#text-title').fadeIn("slow");
 });
 
 $('#start').click(function () {
+    localStorage.setItem(indexKey, index);
     if (myTimer == 0) { //2000: korjaa ehto
         //karuselli ei pyöri
         myTimer = window.setInterval('$("#right").click()', 2000);
@@ -63,5 +85,4 @@ $('#start').click(function () {
         myTimer = 0;
         $('#start').html('<i class="bi bi-file-play"></i>');
     }
-
 });
