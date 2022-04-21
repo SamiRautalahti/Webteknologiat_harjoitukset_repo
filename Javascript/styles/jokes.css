@@ -1,12 +1,12 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 10%;
     /*background-color: azure;*/
-    background-image: url('/images/taustakuva.jpg')
-
+    background-image: url('/Javascript/images/taustakuva.jpg')
 }
-.maincontent{
+
+.maincontent {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,8 +14,9 @@ body{
     background-color: chocolate;
     align-items: stretch;
 }
-.intro{
-    background-color:coral;
+
+.intro {
+    background-color: coral;
     border-style: solid;
     border-radius: 20px;
     border-width: 10px;
@@ -23,7 +24,8 @@ body{
     padding: 5px;
     flex-grow: 2;
 }
-.card{
+
+.card {
     border-style: solid;
     border-radius: 20px;
     border-width: 20px;
@@ -35,12 +37,14 @@ body{
     text-align: center;
     flex-direction: column;
 }
-.card img{
+
+.card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.box1{
+
+.box1 {
     width: 1920px;
     height: 1080px;
     background-color: lightcyan;
