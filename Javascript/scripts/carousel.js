@@ -17,7 +17,7 @@ let index;
 let myTimer;
 const indexKey = 'myDogs';
 
-$(function () {
+$ (function () {
     if (localStorage.hasOwnProperty(indexKey)) {
         index = localStorage.getItem(indexKey);
         console.log('index is: ' + index);
