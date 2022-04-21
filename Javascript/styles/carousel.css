@@ -5,7 +5,7 @@ body {
     /*background-color: azure;*/
     /*background-image: url('/images/taustakuva.jpg')*/
 }
-
+/*
 .maincontent {
     display: flex;
     flex-direction: row;
@@ -43,6 +43,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+*/
 
 .box1 {
     width: 1920px;
@@ -51,3 +52,7 @@ body {
     border: 1px solid black;
     color: blue;
 }
+.centered {
+    text-align: center;
+    justify-items: center;
+  }

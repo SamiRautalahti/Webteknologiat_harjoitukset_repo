@@ -3,7 +3,7 @@ body {
     width: 80%;
     margin: 10%;
     /*background-color: azure;*/
-    /*ackground-image: url('/images/taustakuva.jpg')*/
+    /*background-image: url('/images/taustakuva.jpg');*/
 }
 
 .maincontent {
@@ -51,3 +51,7 @@ body {
     border: 1px solid black;
     color: blue;
 }
+.centered {
+    text-align: center;
+    justify-items: center;
+  }

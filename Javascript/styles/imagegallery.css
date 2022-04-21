@@ -5,7 +5,7 @@ body {
     /*background-color: azure;*/
     /*background-image: url('/images/taustakuva.jpg')*/
 }
-
+/*
 .maincontent {
     display: flex;
     flex-direction: row;
@@ -43,7 +43,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+*/
+.centered {
+    text-align: center;
+    justify-items: center;
+  }
 .box1 {
     width: 1920px;
     height: 1080px;
@@ -54,9 +58,28 @@ body {
 
 .grid-container {
     display: grid;
+    justify-content: center;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
 }
 .list-container {
     display: block;
 }
+.grid-item {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
