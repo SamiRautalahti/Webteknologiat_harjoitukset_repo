@@ -11,8 +11,11 @@ let story_array = [
 
 let index;
 
+let myTimer;
+
 $(function () {
     index = 0;
+    myTimer = 0;
     $('#kuva').attr('src', story_array[index].src);
     $('#text-title').text(story_array[index].title);
     $('#text-content').text(story_array[index].content);
@@ -46,6 +49,13 @@ $('#right').click(function () {
     $('#text-content').text(story_array[index].content);
 });
 
-$('#start').click(function () {
-    var myTimer = window.setInterval('$("#right").click()', 5000);
+$('#start').click(function() {
+        if(myTimer == 0){
+            myTimer = window.setInterval('$("#right").click()', 2000);
+        }
+        else{
+            window.clearInterval(myTimer);
+            myTimer = 0;
+        }
+
 });
