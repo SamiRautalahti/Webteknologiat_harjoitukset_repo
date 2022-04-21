@@ -3,7 +3,7 @@ var helloElement;
 window.onload = function () {
     console.log("Tämä kirjoitetaan selaimen konsoliin");
     helloElement = document.getElementById('hello-div');
-    /*document.body.setAttribute("style", "background-image: url('images/taustakuva.jpg')")*/
+    document.body.setAttribute("style", "background-image: url('images/taustakuva.jpg')")
 }
 
 function sayHelloTo(name) {
