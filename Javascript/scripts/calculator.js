@@ -1,9 +1,10 @@
 let defaultValue;
- 
+
 window.onload = function () {
-        defaultValue = 5;
-        document.getElementById("first-nr").value = getRandomInt(5);
-        document.getElementById("second-nr").value = getRandomInt(9);
+    defaultValue = 5;
+    document.getElementById("first-nr").value = getRandomInt(5);
+    document.getElementById("second-nr").value = getRandomInt(9);
+    document.body.setAttribute("style", "background-image: url('images/taustakuva.jpg')")
 }
 /*
 // jQuery esimerkki
@@ -54,11 +55,10 @@ function calculate() {
     let currentValueA = document.getElementById("first-nr").value;
     let currentValueB = document.getElementById("second-nr").value;
 
-    let total= eval(currentValueA + selectedValue + currentValueB);
+    let total = eval(currentValueA + selectedValue + currentValueB);
     document.getElementById("vastaus").value = total;
 }
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-  

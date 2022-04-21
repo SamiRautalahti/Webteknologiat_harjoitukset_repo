@@ -1,3 +1,7 @@
+window.onload = function () {
+    document.body.setAttribute("style", "background-image: url('images/taustakuva.jpg')")
+}
+
 let story_array = [
     { "title": "Aaaaa", "content": "Aaaa aaaaaa aaaaa, aaa aaa a aa a.", "src": "images/dog1.jpg" },
     { "title": "Bbbbb", "content": "Bbbb bbbbbb bbbbb, bbb bbb b bb b.", "src": "images/dog2.jpg" },
