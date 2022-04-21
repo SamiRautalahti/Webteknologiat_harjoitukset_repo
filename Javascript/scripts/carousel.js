@@ -40,22 +40,28 @@ $('#start').click(function () {
 
 $('#right').click(function () {
     index = index + 1;
-
-    if (index > story_array.length) {
+    console.log(index + ' ' + story_array.length);
+    if (index == story_array.length) {
         index = 0;
     }
+    console.log(index);
     $('#kuva').attr('src', story_array[index].src);
     $('#text-title').text(story_array[index].title);
     $('#text-content').text(story_array[index].content);
 });
 
-$('#start').click(function() {
-        if(myTimer == 0){
-            myTimer = window.setInterval('$("#right").click()', 2000);
-        }
-        else{
-            window.clearInterval(myTimer);
-            myTimer = 0;
-        }
+$('#start').click(function () {
+    if (myTimer == 0) { //2000: korjaa ehto
+        //karuselli ei pyöri
+        myTimer = window.setInterval('$("#right").click()', 2000);
+        console.log(myTimer);
+        $('#start').html('<i class="bi-pause"></i>');
+    }
+    else {
+        //pysäytä karuselli
+        window.clearInterval(myTimer);
+        myTimer = 0;
+        $('#start').html('<i class="bi bi-file-play"></i>');
+    }
 
 });
