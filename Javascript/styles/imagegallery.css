@@ -51,3 +51,12 @@ body {
     border: 1px solid black;
     color: blue;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+.list-container {
+    display: block;
+}
