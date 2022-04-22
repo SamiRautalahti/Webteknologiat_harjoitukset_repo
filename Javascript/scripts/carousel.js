@@ -3,14 +3,14 @@ window.onload = function () {
 }
 
 let story_array = [
-    { "title": "Eka koira", "content": "Aapeli", "src": "images/dog1.jpg" },
-    { "title": "Toka koira", "content": "Reino", "src": "images/dog2.jpg" },
-    { "title": "Kolmas koira", "content": "Köpi", "src": "images/dog3.jpg" },
-    { "title": "Neljäs koira", "content": "Hannu", "src": "images/dog4.jpg" },
-    { "title": "Viides koira", "content": "Rekku", "src": "images/dog5.jpg" },
-    { "title": "Kuudes koira", "content": "Biffi", "src": "images/dog6.jpg" },
-    { "title": "Seitsemäs koira", "content": "Ressu", "src": "images/dog7.jpg" },
-    { "title": "Kahdeksas koira", "content": "Joe Cool", "src": "images/dog8.jpg" },
+    { "title": "Eka koira", "content": "Aapeli (Arthur van Deer Seer)", "src": "images/dog1.jpg" },
+    { "title": "Toka koira", "content": "Reino (Reinhold The Undertaker)", "src": "images/dog2.jpg" },
+    { "title": "Kolmas koira", "content": "Köpi (Köpselin kierros)", "src": "images/dog3.jpg" },
+    { "title": "Neljäs koira", "content": "Hande (Hatanpään Hannu)", "src": "images/dog4.jpg" },
+    { "title": "Viides koira", "content": "Rekku (Rekku)", "src": "images/dog5.jpg" },
+    { "title": "Kuudes koira", "content": "Biffi (Bischefhofens Brulle", "src": "images/dog6.jpg" },
+    { "title": "Seitsemäs koira", "content": "Ressu (Ressu)", "src": "images/dog7.jpg" },
+    { "title": "Kahdeksas koira", "content": "Joe Cool (Joe)", "src": "images/dog8.jpg" },
 ];
 
 let index;
