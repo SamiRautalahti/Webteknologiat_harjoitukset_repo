@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
+    height: auto;
     margin: 10%;
     /*background-color: azure;*/
     /*background-image: url('/images/taustakuva.jpg')*/
