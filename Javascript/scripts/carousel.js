@@ -3,14 +3,14 @@ window.onload = function () {
 }
 
 let story_array = [
-    { "title": "Eka koira", "content": "Aaaa aaaaaa aaaaa, aaa aaa a aa a.", "src": "images/dog1.jpg" },
-    { "title": "Toka koira", "content": "Bbbb bbbbbb bbbbb, bbb bbb b bb b.", "src": "images/dog2.jpg" },
-    { "title": "Kolmas koira", "content": "Cccc cccccc ccccc, ccc ccc c cc c.", "src": "images/dog3.jpg" },
-    { "title": "Neljäs koira", "content": "Dddd dddddd ddddd, ddd ddd d dd d.", "src": "images/dog4.jpg" },
-    { "title": "Viides koira", "content": "Eeee eeeeee eeeee, eee eee e ee e.", "src": "images/dog5.jpg" },
-    { "title": "Kuudes koira", "content": "Ffff ffffff fffff, fff fff f ff f.", "src": "images/dog6.jpg" },
-    { "title": "Seitsemäs koira", "content": "Ffff ffffff fffff, fff fff f ff f.", "src": "images/dog7.jpg" },
-    { "title": "Kahdeksas koira", "content": "Ffff ffffff fffff, fff fff f ff f.", "src": "images/dog8.jpg" },
+    { "title": "Eka koira", "content": "Aapeli", "src": "images/dog1.jpg" },
+    { "title": "Toka koira", "content": "Reino", "src": "images/dog2.jpg" },
+    { "title": "Kolmas koira", "content": "Köpi", "src": "images/dog3.jpg" },
+    { "title": "Neljäs koira", "content": "Hannu", "src": "images/dog4.jpg" },
+    { "title": "Viides koira", "content": "Rekku", "src": "images/dog5.jpg" },
+    { "title": "Kuudes koira", "content": "Biffi", "src": "images/dog6.jpg" },
+    { "title": "Seitsemäs koira", "content": "Ressu", "src": "images/dog7.jpg" },
+    { "title": "Kahdeksas koira", "content": "Joe Cool", "src": "images/dog8.jpg" },
 ];
 
 let index;
