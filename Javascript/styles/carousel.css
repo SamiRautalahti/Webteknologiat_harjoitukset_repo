@@ -5,6 +5,7 @@ body {
     /*background-color: azure;*/
     /*background-image: url('/images/taustakuva.jpg')*/
 }
+
 .box1 {
     width: 1920px;
     height: 1080px;
@@ -12,11 +13,13 @@ body {
     border: 1px solid black;
     color: blue;
 }
+
 .centered {
     text-align: center;
     justify-items: center;
 }
+
 .centered {
     text-align: center;
     justify-items: center;
-  }
+}
