@@ -10,10 +10,8 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/jokes.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
-<script defer src="scripts/jokes.js"></script>
 
 <body>
 
@@ -50,8 +48,21 @@
         </div>
       </div>
     </nav>
-  </div>
 
+    <div class="centered" style="padding-top: 20px">
+      <h5>ChuckNorrisAPI: https://api.icndb.com/jokes/random</h5>
+      <button type="button" id="btn">HAE</button>
+
+      <img id='gif' src="/images/ajax-loader.gif">
+      <div id="account-data"></div>
+
+      <h5>Hakuja tehty:</h5>
+      <div id="laskuri">
+
+      </div>
+    </div>
+
+    <script defer src="scripts/jokes.js"></script>
 
 </body>
 
