@@ -18,15 +18,15 @@ $("#btn").click(function () {
             success: function (response) {
                 // show data in DIV
 
-                $("#account-data").append("<br>" + "<i>" + response.value.id + "</i>");
-                $("#account-data").append("<br>" + "<i>" + response.value.joke + "</i>");
+                $("#accordion").append("<br>" + "<i>" + response.value.id + "</i>");
+                $("#accordion").append("<br>" + "<i>" + response.value.joke + "</i>");
                 $("#gif").hide();
                 counter++;
                 $("#laskuri").text(counter);
             },
             error: function (jqxhr, textStatus, error) {
                 console.log("Error: " + textStatus);
-                $("#account-data").append("<br>" + "<i>" + "Ei löydy" + "</i>");
+                $("#accordion").append("<br>" + "<i>" + "Ei löydy" + "</i>");
             },
         });
     }, "2000");
