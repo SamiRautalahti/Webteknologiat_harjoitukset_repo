@@ -14,67 +14,67 @@
 </head>
 
 <body>
-<script defer src="scripts/map.js"></script>
+  <script defer src="scripts/map.js"></script>
 
-<div class="box1">
+  <div class="box1">
 
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Index.html">Etusivu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="map.html">Kartta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="calculator.html">Laskin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="carousel.html">Karuselli</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="imagegallery.html">Kuvagalleria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="jokes.html">Vitsit</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Sami Rautalahti 2022
-        </span>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">Etusivu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="map.html">Kartta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Laskin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html">Karuselli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagegallery.html">Kuvagalleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jokes.html">Vitsit</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Sami Rautalahti 2022
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="centered" style="padding-top: 20px">
+      <h5>Harjoitus 2</h5>
+      <h6>Harjoitus 2: Näytä osoite kartalla</h6>
+      <p>Tässä harjoituksessa harjoitellaan upotetun Google Maps -ikkunan näyttöä ja muokkaamista. Kartta on upotettu
+        sivulle iFrame -elementillä, ja kartan päivitys on toteutettu JavaScript -funktiolla. </p>
+      <br>
+      <!--<div class="centered">-->
+      <div class="d-flex justify-content-center" style="padding-top: 20px;">
+
+        <iframe id="googleKartta" style="padding: bottom 20px;" title="Google Maps iFrame" width="80%" height="600"
+          src="https://www.google.com/maps?q=Yliopistonkatu 36 Lappeenranta&output=embed">
+        </iframe>
+      </div>
+      <br>
+      <div class="d-flex justify-content-center" <label for="name">Katuosoite:</label>
+        <input type="text" id="katuosoite" size="10">
+        <label for="name">Kaupunki:</label>
+        <input type="text" id="kaupunki" size="10">
+        <br><br>
+        <button onclick="kartanPaivitys()">Hae</button>
       </div>
     </div>
-  </nav>
-
-  <div class="centered" style="padding-top: 20px">
-    <h5>Harjoitus 2</h5>
-    <h6>Harjoitus 2: Näytä osoite kartalla</h6>
-    <p>Tässä harjoituksessa harjoitellaan upotetun Google Maps -ikkunan näyttöä ja muokkaamista. Kartta on upotettu
-      sivulle iFrame -elementillä, ja kartan päivitys on toteutettu JavaScript -funktiolla. </p>
-    <br>
-    <!--<div class="centered">-->
-    <div class="d-flex justify-content-center" style="padding-top: 20px;">
-
-      <iframe id="googleKartta" style="padding: bottom 20px;" title="Google Maps iFrame" width="80%" height="600"
-        src="https://www.google.com/maps?q=Yliopistonkatu 36 Lappeenranta&output=embed">
-      </iframe>
-    </div>
-    <br>
-    <div class="d-flex justify-content-center" <label for="name">Katuosoite:</label>
-      <input type="text" id="katuosoite" size="10">
-      <label for="name">Kaupunki:</label>
-      <input type="text" id="kaupunki" size="10">
-      <br><br>
-      <button onclick="kartanPaivitys()">Hae</button>
-    </div>
   </div>
-</div>
-<br>
-<br>
+  <br>
+  <br>
 
 
 </body>
