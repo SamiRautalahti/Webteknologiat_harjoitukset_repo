@@ -2,12 +2,14 @@ window.onload = function () {
     document.body.setAttribute("style", "background-image: url('images/taustakuva.jpg')")
 }
 
-var counter = 0;
 
+var counter = 0;
+var index = 0;
 $("#gif").hide();
 
 $("#btn").click(function () {
     let urlNorrisJokes = "https://api.icndb.com/jokes/random";
+    index++;
     $("#gif").show();
 
     setTimeout(() => {
@@ -18,15 +20,24 @@ $("#btn").click(function () {
             success: function (response) {
                 // show data in DIV
 
-                $("#accordion").append("<br>" + "<i>" + response.value.id + "</i>");
-                $("#accordion").append("<br>" + "<i>" + response.value.joke + "</i>");
+                // Bootstrap
+                let data = '<div class="accordion-item">'
+                    + '<h2 class="accordion-header" id="flush-heading' + index + '">'
+                    + '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse' + index + '" aria-expanded="false" aria-controls="flush-collapse' + index + '">'
+                    + 'Vitsi' + index +
+                    + '</button>'
+                    + '</h2>'
+                    + '<div id="flush-collapse' + index + '" class="accordion-collapse collapse" aria-labelledby="flush-heading' + index + '" data-bs-parent="#accordionFlushExample">'
+                    + response.value.joke +
+                    + '</div>';
+                document.getElementById("accordionFlushExample").innerHTML += data;
                 $("#gif").hide();
                 counter++;
                 $("#laskuri").text(counter);
             },
             error: function (jqxhr, textStatus, error) {
                 console.log("Error: " + textStatus);
-                $("#accordion").append("<br>" + "<i>" + "Ei löydy" + "</i>");
+                //$("#flush-collapseOne").append("<br>" + "<i>" + "Ei löydy" + "</i>");
             },
         });
     }, "2000");
