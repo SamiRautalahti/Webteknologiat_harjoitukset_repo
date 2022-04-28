@@ -27,5 +27,12 @@ Javascript-kansiosta löytyy nimenomaan Javascript-tehtävät.
 
 •	calculator.html on "Yksinkertainen laskin"-tehtävä.
 
+•	carousel.html on "Vaihtuvasisältöinen kuvakaruselli"-tehtävä.
+
+•	imagegallery.html on "Näkymien vaihtaminen lista- ja ruudukkonäkymän (grid) välillä"-tehtävä.
+
+•	jokes.html on "Ajax-harjoitus"-tehtävä.
+
+
 
 Mikäli tulee mitään kysyttävää niin ota ihmeessä yhteyttä: sami.rautalahti@student.lab.fi
