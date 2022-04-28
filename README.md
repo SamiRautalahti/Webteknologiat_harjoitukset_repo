@@ -3,7 +3,7 @@ Webteknologiat-kurssin harjoitukset
 
 Tässä repositoriossa on kaikki kurssin aikana tehdyt tehtävät. "AL00CM19-3001 Webteknologiat 7.3.2022-6.5.2022"
 
-Tietoja tehtävistä ja tiedostoista:
+Tietoja sekä listaus tehtävistä ja tiedostoista:
 
 HTML5-tehtävät-kansiossa on seuraavat tehtävät:
 
@@ -13,6 +13,7 @@ HTML5-tehtävät-kansiossa on seuraavat tehtävät:
 
 •	Lomake.html on toinen palautettava tehtävä, nimeltään Lomaketehtävä, jossa piti tehdä esimerkin näköinen lomake ja käyttää eri elementtien asetteluun taulukkoa.
 
+
 CSS3-tehtävät-kansiossa on seuraavat tehtävät:
 
 •	Index.html nyt muokattuna omalla tyylillä eli tyylit.css
@@ -20,6 +21,7 @@ CSS3-tehtävät-kansiossa on seuraavat tehtävät:
 •	Index2.html on myös muokattuna omalla tyylillä eli styles.css
 
 •	Testi.html on CSS osa 2: Flexbox/Grid ja Bootstrap-tehtävä.
+
 
 Javascript-kansiosta löytyy nimenomaan Javascript-tehtävät.
 
