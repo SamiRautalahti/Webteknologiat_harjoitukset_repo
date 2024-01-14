@@ -36,7 +36,3 @@ Javascript-kansiosta löytyy nimenomaan Javascript-tehtävät.
 •	imagegallery.html on "Näkymien vaihtaminen lista- ja ruudukkonäkymän (grid) välillä"-tehtävä.
 
 •	jokes.html on "Ajax-harjoitus"-tehtävä.
-
-https://samirautalahti.github.io/Webteknologiat_harjoitukset_repo/Javascript/Index.html
-
-Mikäli tulee mitään kysyttävää niin ota ihmeessä yhteyttä: sami.rautalahti@student.lab.fi
